@@ -1,0 +1,320 @@
+html{
+  color: rgb(68, 66, 66);
+  font-family:sans-serif;
+  line-height:1.8;
+}
+body{
+  width: 1200px;
+  height:100%;
+  margin:auto;
+  border: 2px solid rgb(189, 191, 193);
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+header span{
+  font-weight: bold;
+}
+.academy{
+  color:rgb(214, 214, 214);
+}
+header nav span{
+  margin:8px;
+  /*font-weight: bold;*/
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.container{
+
+  width:100%;
+  display: flex;
+ 
+}
+.banner{
+  background-color:rgb(214, 214, 214);
+  display: flex;
+
+}
+.banner-main{
+    width: 60%;
+    margin: 32px 24px;
+}
+.banner img{
+ width: 100%;
+  height: auto;
+}
+/* information class used to style the It doesn't hurt and the thesis exhibit section */
+.information img{
+ width: 100%;
+  height: auto;
+
+}
+.information-main{
+    margin: 32px 24px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.information-main video{
+  width: 100%;
+  height: auto;
+}
+
+.information-right{
+  display: flex;
+  width:40%;
+  flex-direction: column;
+  height: auto;
+  margin:16px;
+  
+}
+.information-right-subtopic{
+  display: flex;
+  height: auto;
+  width:100%;
+}
+.information-right-subtopic-img{
+  width:35%;
+  margin-left:16px;
+  margin-top:16px;
+
+}
+
+.information-right-subtopic-img img{
+  width:100%;
+  height: auto;
+}
+
+.information-right-subtopic-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:65%;
+}
+.information-right-subtopic-info span{
+  display: block;
+  margin:4px;
+  margin-left: 16px;
+
+}
+.information-right-subtopic-info h3{
+  padding:0px;
+  margin:0px 0px 0px 16px;
+}
+.information-right-subtopic-info span a{
+    text-decoration: none;
+}
+
+.guest-lecture{
+    background-color:rgb(214, 214, 214);
+	margin-right:0;
+}
+.banner-starthere{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 32px 12px;
+  width: 25%;
+  text-align: left;
+
+}
+.banner-starthere span{
+  margin:8px 0;
+}
+
+.start-here{
+  padding: 8px;
+  background-color:rgb(68, 66, 66);
+  color: white;
+  text-align: center;
+}
+
+
+.start-learning
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  background-color: rgb(237, 234, 234);
+}
+.start-learning h1
+{
+  text-align:center;
+  margin-top:32px;
+}
+
+.course-row{
+  display: flex;
+  width:80%;
+  justify-content:center;
+  margin:32px 72px;
+  align-content: center;
+  flex-wrap:wrap;
+
+
+}
+.course{
+  width:25%;
+  margin:16px;
+  background-color:white;
+
+}
+
+.course span,h3{
+	margin: 4px 16px;
+}
+.course img{
+  width: 100%;
+  height: auto;
+}
+.course span{
+  display: block;
+  margin-top:8px;
+}
+.thesis{
+	display:flex;
+	flex-direction:column;
+}
+
+.thesis h1{
+	text-align:center;
+}
+
+footer {
+	margin:24px 16px;
+	
+}
+
+/*if on desktop then hide mobile elements*/
+@media only screen and (min-width:600px)
+{
+	.mobile{
+		display:none;
+	}
+}
+/*if on mobile hide desktop elements and style for mobile*/
+@media only screen and (max-width: 600px) {
+		.desktop{
+			display:none;
+		}
+    body{
+      width:100%;
+	  border:none;
+    }
+	.logo.mobile {
+		display:flex;
+		justify-content:space-around;
+		width:100%;
+	}
+	.banner-main{
+		margin:0;
+	}
+	.start-here{
+		background-color:rgb(163, 156, 156);
+		font-weight:bold;
+	}
+	.start-learning h1{
+		margin-bottom:16px;
+	}
+	.course-row{
+		margin:0;
+		margin-bottom:32px;
+	}
+	.course img{
+		display:none;
+	}
+	.course{
+		width:90%;
+		background-color:rgb(214, 214, 214);
+		margin:4px 16px;
+	}
+	.course h3{
+		margin-left:16px;
+		padding: 8px 0;
+	}
+	.course span{
+		display:none;
+	}
+	.course-row{
+		flex-direction:column;
+		align-items:center;
+		width:100%;	
+	}
+	header{
+		height:64px;
+	}
+    .banner{
+      display: flex;
+      flex-direction:column;
+    }
+    .banner-main{
+      width:100%;
+    }
+    .banner-starthere
+    {
+	  margin:16px;
+      width:93%;
+    }
+    .information-main{
+      display: none;
+    }
+    .information-right{
+      width: 100%;
+	  margin:0;
+    }
+    .information-right-subtopic{
+	  width:93%;
+      display: flex;
+      flex-direction: column;
+	  margin:16px;
+	 
+    }
+    .information-right-subtopic-img{
+      width:100%;
+	  margin:16px 0;
+    }
+	.information-right-subtopic-img img{
+		width:100%;
+		height:auto;
+	}
+	.guest-lecture{
+		background-color:white;
+	}
+	.start-learning{
+		background-color:white;
+	}
+	.bottom{
+		display:flex;
+	}
+   .thesis-description{
+	   display:none;
+   }
+   .information-main.bottom{
+	   width:100%;
+	   margin:16px;
+   }
+   .thesis h1{
+	   width:100%;
+	   margin-bottom:0;
+	   margin-top:32px;
+   }
+   .video{
+	   width:100%;
+	   height:auto;
+   }
+    .information-right.bottom{
+     display:none;
+    }
+	 .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+ }
